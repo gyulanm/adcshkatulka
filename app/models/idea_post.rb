@@ -1,0 +1,2 @@
+class IdeaPost < Post
+end

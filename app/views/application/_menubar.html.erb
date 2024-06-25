@@ -1,0 +1,36 @@
+<header class="header">
+ <div class="wrapper">
+   <div class="header__logo search">
+     <img class="logo" src="/assets/header/logo.svg" alt="">
+     <h1 class="logo_title title title--black ">
+       <span class="logo_word word">Ш</span>катулка
+     </h1>
+     <div class="header__icons icons">
+         <% if user_signed_in?%>
+                    <%= link_to "Выйти", destroy_user_session_path, method: :delete, class: "A_NavigationButton" %>
+                <div class="header__icons icons">
+                  <a href="/lk">
+                    <img class="profile" src="/assets/header/profile.svg" alt="">
+                  </a>
+                </div>
+         <% end %>
+         <% unless user_signed_in? %>
+            <%= link_to "Войти", new_user_session_path, class: "A_NavigationButton SignIn" %>
+            <%= link_to "Регистрация", new_user_registration_path, class: "A_NavigationButton"  %>
+         <% end %>
+       <a href="<%= search_path %>">
+         <img class="Search" src="/assets/header/Search.svg" alt="">
+       </a>
+     </div>
+   </div>
+   <div class="divider">
+     <div class="highlight"></div>
+   </div>
+   <div class="header__nav nav">
+        <a class="nav__link<%=  current_page?(root_path) || current_page?(trends_path) ? ' nav__link--selected' : '' %>" href="<%= trends_path %>">Тренды</a>
+        <a class="nav__link<%= current_page?(stones_path) ? ' nav__link--selected' : '' %>" href="<%= stones_path %>">Камни</a>
+        <a class="nav__link<%= current_page?(jewelrystory_path) ? ' nav__link--selected' : '' %>" href="<%= jewelrystory_path %>">Украшения</a>
+        <a class="nav__link<%= current_page?(history_path) ? ' nav__link--selected' : '' %>" href="<%= history_path %>">История</a>
+   </div>
+ </div>
+</header>

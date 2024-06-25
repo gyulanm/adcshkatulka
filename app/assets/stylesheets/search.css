@@ -1,0 +1,111 @@
+.search {}
+
+.identify {
+    width: calc(100% - 235px);
+    margin-left: 235px;
+}
+.card__text{
+
+    max-height: 200px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-wrap: wrap;
+}
+.form__input--large {
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #000000;
+    padding: 13px 27px;
+    font-family: 'TT Firs Neue Trl', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 33px;
+    line-height: 24px;
+    background: transparent;
+}
+
+.catalog__wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-left: 10%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+.search-bttn {
+    margin-left: -60px;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    column-gap: 57px;
+}
+
+.menu__filter {
+    margin-left: 235px;
+    padding-top: 40px;
+    background: transparent;
+    border-radius: 10px;
+    padding-bottom: 50px;
+
+}
+
+.filter__link--selecteed {
+    background: black;
+    border-radius: 10px;
+    color: #FFFFFF;
+}
+
+.filter__link {
+    font-family: 'TT Firs Neue Trl', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 35px;
+    color: black;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 10px;
+    background: transparent;
+    padding-block: 7px;
+    padding-inline: 22px;
+    padding: 11px 110px;
+}
+
+.filter__link-bl {
+    background-color: black;
+    color: #FFFFFF;
+    margin-left: -20px;
+}
+
+.cards__item {
+    padding-top: 85px;
+    padding-bottom: 25px;
+    max-width: 458px;
+}
+.cards__item .card__img {
+    width: 100%;
+}
+.search_card {
+    margin-bottom: 113px;
+}
+
+@media (max-width: 720px) {
+    .identify,.menu__filter{
+        display: flex;
+        width: unset;
+        margin-left:0px;
+        justify-content: center;
+
+        flex-wrap: wrap;
+    }
+    .filter__link-bl{
+        margin-left:0px;
+    }
+    .form__input--large{
+        padding: 0 0;
+        width: calc(100% - 40px);
+    }
+}

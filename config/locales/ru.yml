@@ -1,0 +1,20 @@
+ru:
+  hello: "Привет, мир!"
+
+  activerecord:
+    models:
+      user:
+        one: "Пользователь"
+        few: "Пользователя"
+        many: "Пользователей"
+        other: "Пользователя"
+      support: "Обращение в поддержку"
+    attributes:
+      user:
+        email: "Введите адрес эл.почты"
+        password: "Придумайте пароль"
+        password_confirmation: "Повторите пароль"
+        sign_up: "Тест"
+      support:
+        email: "Введите адрес эл.почты"
+        comment: "Ваше обращение"

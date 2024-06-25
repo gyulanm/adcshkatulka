@@ -1,0 +1,127 @@
+.main-section {
+    background: #EEEDEC;
+    display: flex;
+    flex-direction: row;
+    padding-left: 42px;
+    padding-right: 42px;
+    column-gap: 46px;
+}
+
+.main__navigation {
+    display: flex;
+    flex-direction: column;
+    row-gap: 450px;
+    padding-top: 17px;
+    max-width: 73px;
+    word-wrap: break-word;
+}
+
+#favorite_1{
+
+    position: absolute;
+    top: 0px;
+
+}
+.background {
+    margin: 0px;
+    position: relative;
+}
+
+.banner__img {
+    /*background: url(/assets/zircon/bannerzircon.jpg) center center no-repeat;*/
+}
+
+.banner__img {
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 14px;
+    /*padding: 496px 385px 30px 396px;*/
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.banner__img img{
+    width:100%;
+}
+
+.slot {
+    display: flex;
+    flex-direction: row;
+}
+
+.icons__img {
+    background: transparent;
+    border: 2px solid #000000;
+    margin-right: 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+}
+
+.img__js {
+    justify-content: center;
+    display: flex;
+
+    justify-content: left;
+}
+
+.zircon__first{
+    width: calc(100% - 126px);
+}
+
+.zir {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.banner{
+    padding: 0 40px;
+    margin-left:0px;
+}
+
+
+@media (max-width: 800px){
+    .main__section{
+
+        padding-right: 42px;
+    }
+    .banner__img {
+        padding:0px !important;
+    }
+    .banner{
+        width:100%;
+        padding: 0px;
+    }
+    .main__navigation{
+        padding-top: 0px;
+
+        max-width: 100%;
+        word-wrap: break-word;
+    }
+}
+
+@media (max-width: 440px) {
+    .main-section {
+        padding-left: 20px;
+        width: calc(100% - 20px);
+    }
+    .comment-form-container{
+        width: calc(100% - 20px) !important;
+    }
+
+    .background {
+        width: calc(100% - 20px);
+        padding-right: 20px;
+    }
+}

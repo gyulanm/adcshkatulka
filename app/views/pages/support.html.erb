@@ -1,0 +1,40 @@
+<% content_for :stylesheets do %>
+  <%= stylesheet_link_tag "support" %>
+<% end %>
+<section class="main-section">
+  <div class="background">
+    <div class="banner">
+      <div class="support">
+        <div class="supcontent">
+          <img class="supimg" src="/assets/support/img.jpg" alt="">
+          <h1 class="supname">Айсель Магеррамова</h1>
+        </div>
+        <div class="data">
+          <ul class="social">
+            <li>Ник: @ayselmg</li>
+            <li>Почта: aysel@mail.ru</li>
+          </ul>
+          <ul class="follows social">
+            <li class="sub"> <img src="/assets/support/sub.svg" alt="">Подписки: 1356</li>
+            <li class="sub"> <img src="/assets/support/fol.svg" alt="">Подписчики: 356</li>
+          </ul>
+        </div>
+        <div class="article">
+          <div class="article__nav">
+            <a class="article__link" href="">Статьи</a>
+            <a class="article__link" href="">Лайки</a>
+          </div>
+          <div class="article__column">
+            <div class="support__text">
+              <h2 class="article__text">Напишите первую статью, чтобы привлечь<br>читателей в ваш блог
+              </h2>
+            </div>
+            <a href="<%= publish_path %>">
+              <button class="article__button">Создать запись</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

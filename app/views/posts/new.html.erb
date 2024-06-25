@@ -1,0 +1,13 @@
+<div class="contentPage">
+
+  <h1>Новый пост</h1>
+
+  <%= render "form", post: @post, url: posts_path %>
+
+  <%#= render "form", post: @post %>
+
+  <div>
+    <%= link_to "Обратно ко всем постам", :back %>
+  </div>
+
+</div>

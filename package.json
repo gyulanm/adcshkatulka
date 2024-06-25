@@ -1,0 +1,12 @@
+{
+  "name": "B21DZ09-L3-Project-05",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/HSEADC/B21DZ09-L3-Project-05.git",
+  "author": "lena-don <lena08don@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@prettier/plugin-ruby": "^4.0.4",
+    "prettier": "^3.3.2"
+  }
+}

@@ -1,0 +1,56 @@
+<% content_for :stylesheets do %>
+  <%= stylesheet_link_tag "support", "post" %>
+<% end %>
+<section class="main-section">
+        <div class="background">
+            <div class="banner">
+                <div class="support">
+                    <div class="supcontent">
+                        <img class="supimg" src="/assets/support/img.jpg" alt="">
+                        <h1 class="supname">Айсель Магеррамова</h1>
+                    </div>
+                    <div class="data">
+                        <ul class="social">
+                            <li>Ник: @ayselmg</li>
+                            <li>Почта: aysel@mail.ru</li>
+                        </ul>
+                        <ul class="follows social">
+                            <li class="sub"> <img src="/assets/support/sub.svg" alt="">Подписки: 1356</li>
+                            <li class="sub"> <img src="/assets/support/fol.svg" alt="">Подписчики: 356</li>
+                        </ul>
+                    </div>
+                    <div class="article">
+                        <div class="article__nav">
+                            <a class="article__link" href="">Статьи</a>
+                            <a class="article__link" href="">Лайки</a>
+                        </div>
+                        <div class="position">
+                                <% @favorites.each do |post| %>
+
+                            <div class="panel">
+                                  <div class="origin">
+                                    <%= image_tag post.post_image.url, class:"post__img"  %>
+                                    <div class="post__desc">
+                                      <div class="post__shell">
+                                        <h2 class="post__name"><%= post.title.split('/').last %></h2>
+                                        <p class="post__title"><%= post.title %></p>
+                                        <img class="post__icon" src="/assets/zircon/pen.svg" alt="">
+                                      </div>
+                                      <p class="post__text">
+                                       <%= post.description.html_safe %>
+                                      </p>
+                                      <p class="post__date"><%= post.created_at.strftime("%d.%m.%Y") %></p>
+                                    </div>
+                                  </div>
+                            </div>
+                                <% end %>
+
+                            <a href="">
+                                <img class="plus" src="/assets/zircon/plus.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>

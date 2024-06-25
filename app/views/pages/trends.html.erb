@@ -1,0 +1,220 @@
+    <% content_for :stylesheets do %>
+      <%= stylesheet_link_tag "trends" %>
+    <% end %>
+
+    <% content_for :javascripts do %>
+      <%= javascript_include_tag "script", "diamond" %>
+    <% end %>
+<section class="main-section">
+        <div class="background">
+            <div class="banner">
+                <div class="banner__group">
+                    <img class="banner__photo" src="/assets/trends/banner1.jpg" alt="">
+                    <div class="banner__card">
+                        <h2 class="banner_title">Жемчужные реки</h2>
+                        <p class="banner_text">Цепи, которые много лет<br>держались в топе модных трендов,<br>уступили
+                            место
+                            жемчугу.<br>Теперь он везде: на очках, кожаных<br>куртках, джинсах и даже кроссовках...</p>
+                        <div class="banner__divider">
+                            <div class="banner__highlight"></div>
+                        </div>
+                        <div class="flex__banner">
+                            <img class="img_cartier" src="/assets/trends/bnnr1.jpg" alt="">
+                            <h1 class="logo_title title title--black ">
+                                <span class="logo_word word">История</span> Cartier
+                                <a class="btn" href="/cartier"> Читать</a>
+                            </h1>
+                        </div>
+                        <div class="rhombus">
+                            <div class="diamond" data-imageUrl="/assets/trends/bannerimg.jpg" id="diamond1"></div>
+                            <div class="diamond" data-imageUrl="/assets/stones/banner.jpg" id="diamond2"></div>
+                            <div class="diamond" data-imageUrl="/assets/trends/bannerimg.jpg" id="diamond3"></div>
+                            <!-- ромбики -->
+                        </div>
+                    </div>
+                </div>
+                <div class="banner__group hidden">
+                    <img class="banner__photo" src="/assets/trends/banner2.jpg" alt="">
+                    <div class="banner__card">
+                        <h2 class="banner_title">Новая коллекция<br>Prada</h2>
+                        <p class="banner_text">Последняя коллекция ювелирных<br>украшений Prada особенная.
+                            Новая<br>линия, получившая название «Eternal»<br>Gold, раздвинула границы
+                            изысканных<br>ювелирных изделий...</p>
+                        <div class="banner__divider">
+                            <div class="banner__highlight"></div>
+                        </div>
+                        <div class="flex__banner">
+                            <img class="img_cartier" src="/assets/trends/bnnr1.jpg" alt="">
+                            <h1 class="logo_title title title--black ">
+                                <span class="logo_word word">История</span> Cartier
+                                <a class="btn" href="/cartier"> Читать</a>
+                            </h1>
+                        </div>
+                        <div class="rhombus">
+                            <div class="diamond" data-imageUrl="/assets/trends/bannerimg.jpg" id="diamond1"></div>
+                            <div class="diamond" data-imageUrl="/assets/stones/banner.jpg" id="diamond2"></div>
+                            <div class="diamond" data-imageUrl="/assets/trends/bannerimg.jpg" id="diamond3"></div>
+                            <!-- ромбики -->
+                        </div>
+                    </div>
+                </div>
+                <div class="banner__group hidden">
+                    <img class="banner__photo" src="/assets/trends/banner3.jpg" alt="">
+                    <div class="banner__card">
+                        <h2 class="banner_title">Обручальные<br>кольца</h2>
+                        <p class="banner_text">Когда дело доходит до покупки самых<br>лучших обручальных колец,
+                            даже<br>самые радикальные и неконформные<br>пары заинтригованы. В то время<br>как некоторые
+                            традиции...</p>
+                        <div class="banner__divider">
+                            <div class="banner__highlight"></div>
+                        </div>
+                        <div class="flex__banner">
+                            <img class="img_cartier" src="/assets/trends/bnnr1.jpg" alt="">
+                            <h1 class="logo_title title title--black ">
+                                <span class="logo_word word">История</span> Cartier
+                                <a class="btn" href="/cartier"> Читать</a>
+                            </h1>
+                        </div>
+                        <div class="rhombus">
+                            <div class="diamond" data-imageUrl="/assets/trends/bannerimg.jpg" id="diamond1"></div>
+                            <div class="diamond" data-imageUrl="/assets/stones/banner.jpg" id="diamond2"></div>
+                            <div class="diamond" data-imageUrl="/assets/trends/bannerimg.jpg" id="diamond3"></div>
+                            <!-- ромбики -->
+                        </div>
+                    </div>
+                </div>
+                <div class="recommendations">
+                    <div class="wrapper">
+                        <div class="title-group">
+                            <a class="recommendations__title title-main" href="">Популярное</a>
+                            <div class="divider__second">
+                                <div class="highlight__second"></div>
+                            </div>
+                        </div>
+                        <div class="rec__visible rec__slider">
+                            <div class="rec__flex">
+                                <div class="rec__item rec_gap" id="card1">
+                                    <button class="bttn_save">
+                                        <img src="/assets/common/save.svg" alt="save" class=" ">
+                                    </button>
+                                    <img class="rec__img cards__img" src="/assets/trends/card1.jpg" alt="">
+                                    <h1 class="rec__name">Cartier</h1>
+                                    <p class="rec__text text">Cartier готовят несколько<br>проектов со
+                                        студентами<br>петербургского кампуса ВШЭ<br></p>
+                                    <button class="rec__btn">#Украшения</button>
+                                </div>
+                                <div class="rec__item rec_gap" id="card2">
+                                    <button class="bttn_save ">
+                                        <img src="/assets/common/save.svg" alt="">
+                                    </button>
+                                    <img class="rec__img cards__img" src="/assets/trends/card2.jpg" alt="">
+                                    <h1 class="rec__name">Бриллианты</h1>
+                                    <p class="rec__text text">Бриллианты лучшие<br>друзья девушек?</p>
+                                    <button class="rec__btn">#Камни</button>
+                                </div>
+                                <div class="rec__item rec_gap hidden" id="card3">
+                                    <button class="bttn_save ">
+                                        <img src="/assets/common/save.svg" alt="">
+                                    </button>
+                                    <img class="rec__img cards__img" src="/assets/trends/metgala.jpg" alt="">
+                                    <h1 class="rec__name">Украшения на Met Gala</h1>
+                                    <p class="rec__text text">В «Саду времени» Джеймса Грэма Балларда, к которому в этот
+                                        раз отсылала тема бала Института костюма...
+                                    </p>
+                                    <button class="rec__btn">#Украшения</button>
+                                </div>
+                                <div class="rec__item rec_gap hidden" id="card4">
+                                    <button class="bttn_save ">
+                                        <img src="/assets/common/save.svg" alt="">
+                                    </button>
+                                    <img class="rec__img cards__img" src="/assets/trends/vivalavika.jpg" alt="">
+                                    <h1 class="rec__name">VIVA LA VIKA</h1>
+                                    <p class="rec__text text">Роскошное пополнение на модной карте Москвы — новый
+                                        флагманский магазин любимого многими бренда украшений Viva La Vika...</p>
+                                    <button class="rec__btn">#Украшения</button>
+                                </div>
+                            </div>
+                            <button class="next_btn">
+                                <img src="/assets/trends/next.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="popular">
+                    <div class="wrapper">
+                        <div class="title-group">
+                            <a class="popular title-main" href="">Рекомендуемые</a>
+                            <div class="divider__second">
+                                <div class="highlight__second"></div>
+                            </div>
+                        </div>
+                        <div class="popular rec__visible popular__slider">
+                            <div class="popular__flex rec__flex ">
+                                <div class="popular__item rec__item">
+                                    <button class="bttn_save ">
+                                        <img src="/assets/common/save.svg" alt="">
+                                    </button>
+                                    <img class="popular__img rec__img" src="/assets/trends/card3.jpg" alt="">
+                                    <p class="rec__name">ROSE Х Tiffany HardWear</p>
+                                    <p class="popular__text rec__text text"> Черпающая вдохновение в дизайне 1962 года
+                                        коллекция HardWear — символ преображающей силы любви...
+                                    </p>
+                                    <button class="popular__btn rec__btn">#Камни</button>
+                                </div>
+                                <div class="popular__item rec__item">
+                                    <button class="bttn_save ">
+                                        <img src="/assets/common/save.svg" alt="">
+                                    </button>
+                                    <img class="popular__img rec__img" src="/assets/trends/card4.jpg" alt="">
+                                    <p class="rec__name"> Колье Snowflake collerette</p>
+                                    <p class="popular__text rec__text text"> Коллекция Snowflake навеяна сверканием
+                                        снежинок, которые вдохновляют мастеров Van Cleef & Arpels еще с 1940-х годов...
+                                    </p>
+                                    <button class="popular__btn rec__btn">#Камни</button>
+                                </div>
+                                <div class="popular__item rec__item">
+                                    <button class="bttn_save ">
+                                        <img src="/assets/common/save.svg" alt="">
+                                    </button>
+                                    <img class="popular__img rec__img" src="/assets/trends/card5.jpg" alt="">
+                                    <p class="rec__name"> Фамильная тиара Спенсеров</p>
+                                    <p class="popular__text rec__text text"> Это тиара Фермой. Именно в ней шла под
+                                        венец мать Дианы, достопочтенная Фрэнсис Рош, когда в 1954 год... </p>
+                                    <button class="popular__btn rec__btn">#Камни</button>
+                                </div>
+                                <div class="popular__item rec__item hidden">
+                                    <button class="bttn_save ">
+                                        <img src="/assets/common/save.svg" alt="">
+                                    </button>
+                                    <img class="popular__img rec__img" src="/assets/trends/6.jpg" alt="">
+                                    <p class="rec__name">Золотые руки</p>
+                                    <p class="popular__text rec__text text"> В ушедшем году году 20-летие своей
+                                        деятельности отметил Cartier Jewellery Institute и 10-летний юбилей...</p>
+                                    <button class="popular__btn rec__btn">#Камни</button>
+                                </div>
+                                <div class="popular__item rec__item hidden">
+                                    <button class="bttn_save ">
+                                        <img src="/assets/common/save.svg" alt="">
+                                    </button>
+                                    <img class="popular__img rec__img" src="/assets/trends/7.jpg" alt="">
+                                    <p class="rec__name"> Часы Cartier</p>
+                                    <p class="popular__text rec__text text">иконография пантеры остается неизменной уже
+                                        почти сто лет: глаза из изумрудов, шкура — из бриллиантовой россыпи... </p>
+                                    <button class="popular__btn rec__btn">#Камни</button>
+                                </div>
+                            </div>
+                            <button class="next_btn">
+                                <img src="/assets/trends/next.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        createSlider('.popular__slider');
+        createSlider('.rec__slider');
+    });
+</script>

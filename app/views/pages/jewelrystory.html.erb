@@ -1,0 +1,156 @@
+    <% content_for :stylesheets do %>
+      <%= stylesheet_link_tag "jewelrystory" %>
+    <% end %>
+
+    <% content_for :javascripts do %>
+      <%= javascript_include_tag "slider" %>
+    <% end %>
+
+<section class="main-section">
+        <div class="background">
+            <div class="banner">
+                <div class="title-group">
+                    <a class="jewelry__title title-main" href="">Статьи</a>
+                    <div class="divider__second">
+                        <div class="highlight__second"></div>
+                    </div>
+                </div>
+                <div class="catalog__wrapper">
+                    <div class="jewelry__group">
+                        <a class="cards__item card card--long article_card">
+                            <button class="bttn_save">
+                                <img src="/assets/common/save.svg" alt="">
+                            </button>
+                            <img class="card__img img__diana" src="/assets/jewelrystory/diana.jpg" alt="">
+                            <h2 class="card__title">История помолвочного кольца принцессы Дианы</h2>
+                            <p class="card__text">Сапфир в окружении бриллиантов —самое<br>известное в мире помолвочное
+                                кольцо,<br>и практически любая женщина точно знает,<br>кто его носил в прошлом, и кто носит
+                                теперь.</p>
+                            <button class="rec__btn">#Украшения</button>
+                        </a>
+                        <a class="cards__item card card--long article_card">
+                            <button class="bttn_save ">
+                                <img src="/assets/common/save.svg" alt="">
+                            </button>
+                            <img class="card__img img__diana" src="/assets/jewelrystory/tiffanydiamond.jpg" alt="">
+                            <h2 class="card__title">Жёлтый бриллиант</h2>
+                            <p class="card__text">В честь дня рождения Чарльза Льюиса Тиффани,<br>основателя культового
+                                ювелирного бренда, который<br>появился на свет 210 лет назад...</p>
+                            <button class="rec__btn">#Украшения</button>
+                        </a>
+                    </div>
+                    <div class="jewelry__group">
+                        <a class="cards__item card card--long article_card">
+                            <button class="bttn_save ">
+                                <img src="/assets/common/save.svg" alt="">
+                            </button>
+                            <img class="card__img img__diana" src="/assets/jewelrystory/elizabethtaylor.jpg" alt="">
+                            <h2 class="card__title">Кольцо Элизабет Тейлор</h2>
+                            <p class="card__text">Элизабет Тейлор 10 раз была<br>помолвлена, 8 раз выходила замуж,<br>7 раз разводилась и 1 раз овдовела...</p>
+                            <button class="rec__btn">#Украшения</button>
+                        </a>
+                        <a class="cards__item card card--long article_card">
+                            <button class="bttn_save ">
+                                <img src="/assets/common/save.svg" alt="">
+                            </button>
+                            <img class="card__img img__diana" src="/assets/jewelrystory/gracekelly.jpg" alt="">
+                            <h2 class="card__title">Коллекция Грейс Келли</h2>
+                            <p class="card__text">Вспоминаем самые роскошные украшения<br>из её обширной ювелирной<br>коллекции и удивительные истории, стоящие<br>за каждым из этих легендарных изделий...</p>
+                            <button class="rec__btn">#Украшения</button>
+                        </a>
+                    </div>
+                    <div class="jewelry__group">
+                        <a class="cards__item card card--long article_card">
+                            <button class="bttn_save ">
+                                <img src="/assets/common/save.svg" alt="">
+                            </button>
+                            <img class="card__img img__diana" src="/assets/jewelrystory/national.jpg" alt="">
+                            <h2 class="card__title">Мусульманские украшения</h2>
+                            <p class="card__text">Одними из главных постулатов Ислама традиционно<br>остаются скромность и
+                                умеренность. Поэтому выбор<br>может оказаться сложнее, чем для представителей<br>других
+                                конфессий...</p>
+                            <button class="rec__btn">#Украшения</button>
+                        </a>
+                        <a class="cards__item card card--long article_card">
+                            <button class="bttn_save ">
+                                <img src="/assets/common/save.svg" alt="">
+                            </button>
+                            <img class="card__img img__diana" src="/assets/jewelrystory/ring.jpg" alt="">
+                            <h2 class="card__title">Коктейльные кольца</h2>
+                            <p class="card__text">Какая связь между шампанским, аперолем,<br>драгоценными аксессуарами и
+                                женской<br>свободой? Против чего протестовали<br>американские женщины «ревущих 20-х»...</p>
+                            <button class="rec__btn">#Украшения</button>
+                        </a>
+                    </div>
+                    <!-- <a class="cards__item card card--long">
+                        <img class="card__img img__diana" src="/assets/jewelrystory/diana.jpg" alt="">
+                        <h2 class="card__title">История помолвочного кольца<br>принцессы Дианы</h2>
+                        <p class="card__text">Сапфир в окружении бриллиантов —<br>самое известное в мире помолвочное
+                            кольцо,<br>и практически любая женщина точно знает,<br>кто его носил в прошлом, и кто носит
+                            теперь.</p>
+                        <p class="author__text">Автор: Анастасия Волковская</p>
+                    </a>
+                    <a class="cards__item card">
+                        <img class="card__img img__diana" src="/assets/jewelrystory/tiffanydiamond.jpg" alt="">
+                        <h2 class="card__title">Колье с желтым бриллиантом<br>Tiffany Diamond</h2>
+                        <p class="card__text"> В честь дня рождения Чарльза Льюиса<br>Тиффани, основателя
+                            культового<br>ювелирного бренда, который появился<br>на свет 210 лет назад...</p>
+                        <p class="author__text">Автор: Анастасия Волковская</p>
+                    </a>
+                    <a class="cards__item card">
+                        <img class="card__img img__diana" src="/assets/jewelrystory/elizabethtaylor.jpg" alt="">
+                        <h2 class="card__title">Кольцо Элизабет Тейлор</h2>
+                        <p class="card__text">Элизабет Тейлор 10 раз была<br>помолвлена, 8 раз выходила замуж, 7<br>раз
+                            разводилась и 1 раз овдовела...</p>
+                        <p class="author__text">Автор: Анастасия Волковская</p>
+                    </a>
+                    <a class="cards__item card" href="./jewelry.html">
+                        <img class="card__img img__diana" src="/assets/jewelrystory/gracekelly.jpg" alt="">
+                        <h2 class="card__title">Ювелирная коллекция<br>Грейс Келли</h2>
+                        <p class="card__text">Вспоминаем самые роскошные<br>украшения из её обширной
+                            ювелирной<br>коллекции и удивительные истории,<br>стоящие за каждым из этих<br>легендарных
+                            изделий...</p>
+                        <p class="author__text">Автор: Анастасия Волковская</p>
+                    </a>
+                    <a class="cards__item card">
+                        <img class="card__img img__diana" src="/assets/jewelrystory/present.jpg" alt="">
+                        <h2 class="card__title">Идеальный подарок<br>любимой на 14 февраля</h2>
+                        <p class="card__text">Известные ювелирные бренды<br>наперебой спешат представить к 14<br>февраля
+                            свои специальные линии, в<br>которых обязательно присутствуют<br>элементы в виде сердечек...
+                        </p>
+                        <p class="author__text">Автор: Анастасия Волковская</p>
+                    </a>
+                    <a class="cards__item card card--long">
+                        <img class="card__img img__diana" src="/assets/jewelrystory/diamond.jpg" alt="">
+                        <h2 class="card__title">Роскошный подарок от свекрови:<br>бриллиантовое колье из книги
+                            рекордов<br>Гиннеса</h2>
+                        <p class="card__text">Золотистый бриллиант размером с яйцо,<br>украшающий невероятно красивое
+                            ожерелье,<br>сейчас хранится в шкатулке одной индийской<br>счастливицы...</p>
+                        <p class="author__text">Автор: Анастасия Волковская</p>
+                    </a>
+                    <a class="cards__item card">
+                        <img class="card__img img__diana" src="/assets/jewelrystory/film.jpg" alt="">
+                        <h2 class="card__title">5 колье из кино, которые стоят<br>дороже миллиона долларов</h2>
+                        <p class="card__text">Вспоминаем истории самых<br>завораживающих кино-драгоценностей<br>и
+                            выясняем, как их создавали...</p>
+                        <p class="author__text">Автор: Анастасия Волковская</p>
+                    </a>
+                    <a class="cards__item card card--long">
+                        <img class="card__img img__diana" src="/assets/jewelrystory/necklace.jpg" alt="">
+                        <h2 class="card__title">Выбираем мусульманские украшения</h2>
+                        <p class="card__text">Одними из главных постулатов Ислама<br>традиционно остаются скромность и
+                            умеренность.<br>Поэтому выбор может оказаться сложнее, чем для<br>представителей других
+                            конфессий...</p>
+                        <p class="author__text">Автор: Анастасия Волковская</p>
+                    </a>
+                    <a class="cards__item card">
+                        <img class="card__img img__diana" src="/assets/jewelrystory/movie.jpg" alt="">
+                        <h2 class="card__title">Коктейльные кольца<br>и громкие заявления</h2>
+                        <p class="card__text">Какая связь между шампанским,<br>аперолем, драгоценными аксессуарами<br>и
+                            женской свободой? Против чего<br>протестовали американские женщины<br>«ревущих 20-х»...</p>
+                        <p class="author__text">Автор: Анастасия Волковская</p>
+                    </a> -->
+                </div>
+            </div>
+        </div>
+    </section>

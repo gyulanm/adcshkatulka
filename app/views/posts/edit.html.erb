@@ -1,0 +1,12 @@
+<div class="contentPage">
+
+  <h1>Редактирование поста</h1>
+
+  <%= render "form", post: @post, url: post_path(@post) %>
+
+  <div>
+    <%= link_to "Показать пост", post_path(@post) %> |
+    <%= link_to "Обратно ко всем постам", posts_path %>
+  </div>
+
+</div>

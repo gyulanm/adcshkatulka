@@ -1,0 +1,10 @@
+<%= form_with(model: Comment.new, class: "comment-form") do |form| %>
+  <div>
+    <%= form.hidden_field :post_type, value: post.class %>
+    <%= form.hidden_field :post_id, value: post.id %>
+  </div>
+  <% if can? :create, comment %>
+      <%= form.text_area :body, placeholder: "Написать комментарии..", class: "A_CreateCommentInput" %>
+      <%= form.submit :"Отправить", class: "submit-btn" %>
+  <% end %>
+<% end %>

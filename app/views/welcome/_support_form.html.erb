@@ -1,0 +1,33 @@
+<% content_for :stylesheets do %>
+  <%= stylesheet_link_tag "enter", "tech" %>
+<% end %>
+<section class="main-section">
+<div class="background">
+    <%= form_with(model: support, url: support_request_support_path) do |form| %>
+      <% if support.errors.any? %>
+        <div style="color: red">
+          <h2><%= pluralize(support.errors.count, "error") %>. Обращение не было отправлено:</h2>
+
+          <ul>
+            <% support.errors.each do |error| %>
+              <li><%= error.full_message %></li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
+<div class="banner">
+      <div class="enter">
+        <h1 class="title__enter">Поддержка</h1>
+        <div class="wrapper__denter">
+                    <%= form.email_field :email, class: "mail", placeholder: "Ваша почта" %>
+
+                    <%= form.text_area :body, class: "mail", placeholder: "Расскажите, что случилось" %>
+
+                    <%= form.submit :"Отправить", class: "enter_btn btn__text" %>
+        </div>
+      </div>
+</div>
+
+    <% end %>
+</div>
+</section>

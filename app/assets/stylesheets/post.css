@@ -1,0 +1,103 @@
+.position {
+    background: #EEEDEC;
+    border-radius: 12px;
+    padding: 47px 47px 47px 40px;
+    padding-top: 49px;
+    display: flex;
+    flex-direction: row;
+    gap: 85px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin: 0 auto;
+    margin-bottom: 25px;
+
+    max-width: 1100px;
+
+}
+.support{
+
+    padding: 10px 20px;
+}
+
+.panel {
+    background: #FFFFFF;
+    border-radius: 12px;
+    font-family: 'TT Firs Neue Trl', sans-serif;
+    padding: 20px 48px 29px 50px;
+}
+
+.origin {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.post__img {
+    height: 367px;
+    width: 367px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post__shell {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.post__name {
+    font-size: 38px;
+    color: #000000;
+}
+
+.post__title {
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.post__text {
+    font-size: 19px;
+    color: #000000;
+
+    max-height: 179.2px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-wrap: wrap;
+}
+
+.post__date {
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.plus {
+    background: white;
+    border-radius: 50%;
+    height: 59px;
+    padding: 18px;
+    cursor: crosshair;
+}
+
+
+@media (max-width: 853px) {
+    .origin{
+        flex-wrap: wrap;
+    }
+    .panel{
+        padding: unset;
+    }
+    .post__img{
+        height: auto;
+        width: 100%;
+    }
+    .position{
+        padding:unset;
+    }
+}

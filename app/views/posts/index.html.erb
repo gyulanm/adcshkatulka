@@ -1,0 +1,33 @@
+<p style="color: green"><%= notice %></p>
+
+<div class="contentPage">
+
+  <h1>Посты</h1>
+
+  <div class="tagChipsRow">
+    <% Post.tag_counts_on(:tags).each do |tag| %>
+      <%= link_to tagged_posts_path(tag.name) do %>
+        <div class="tagChips">
+          <%= tag.name %>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+
+  <% if can? :create, Post %>
+    <%= link_to "Новый пост", new_post_path %>
+  <% end %>
+
+  <div id="posts">
+    <%#= render @posts %>
+  </div>
+
+  <div id="posts">
+    <% @posts.each do |post| %>
+      <%= link_to post_path(post) do %>
+        <%= render post %>
+      <% end %>
+    <% end %>
+  </div>
+
+</div>

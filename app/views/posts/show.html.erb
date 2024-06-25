@@ -1,0 +1,51 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :stylesheets do %>
+      <%= stylesheet_link_tag "zircon","jewelry", "comment" %>
+    <% end %>
+
+    <% content_for :javascripts do %>
+      <%= javascript_include_tag "zircon" %>
+    <% end %>
+<section class="main-section">
+      <% if @post.type == "IdeaPost" %>
+        <%= render partial: "posts/postideapage", locals: {post: @post} %>
+      <% end %>
+
+        <% unless user_signed_in? %>
+            <button class="bttn_save ">
+               <img src="/assets/common/save.svg" alt="">
+           </button>
+        <% end %>
+        <% if user_signed_in?%>
+            <%= render "favorites/favorite", post: @post %>
+        <% end %>
+
+
+      <%#= render @post %>
+
+        <div class="comment">
+            <div class="comment__wrapper">
+
+                <div class="title-group">
+                    <h1 class="jewelry_title"><%= @post.comments.count %> комментария</h1>
+                    <div class="divider__second">
+                        <div class="highlight__second"></div>
+                    </div>
+                </div>
+                <div class="comment">
+
+                      <%#= render @post.comments, post: @post %>
+                        <% @post.comments.each do |comment| %>
+                            <%= render comment, post: @post %>
+                        <% end %>
+
+                    <div class="comment-form-container">
+                        <%= render "comments/form", post: @post, comment: Comment.new %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </dev>
+</section>

@@ -1,0 +1,266 @@
+@font-face {
+    font-family: 'Bickham script one';
+    src: url('/assets/bickham-script-one.woff');
+}
+
+@font-face {
+    font-family: 'Bickham script one';
+    src: url(/assets/bickham-script-one.woff);
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('/assets/PlayfairDisplay-Italic.ttf') format('truetype');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Firs Neue Trl';
+    src: url('/assets/TTFirsNeue-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'TT Firs Neue Trl';
+    src: url('/assets/TTFirsNeue-Medium.ttf') format('truetype');
+    font-weight: 500;
+    /* Средний вес, адаптируйте под ваш файл */
+}
+
+
+.main-section {
+    background: #EEEDEC;
+}
+
+.background {
+    background: #ffffff;
+    /*margin: 0px 214px;*/
+    /*width: 1429px;*/
+    /*width: calc(100% - 170px);*/
+}
+
+.banner {
+    width: calc(100% - 248px);
+    padding: 11px 135px 110px 112px;
+}
+
+.banner__content {
+    /* height: 741px;
+    width: 1245px; */
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 14px;
+    padding: 496px 385px 30px 396px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 14px;
+}
+
+.banner__text {
+    font-family: 'TT Firs Neue Trl', sans-serif;
+    font-size: 29px;
+    font-weight: 400;
+    line-height: normal;
+    color: white;
+    text-align: center;
+}
+
+.banner__btn {
+    padding: 12px 40px;
+    background-color: #D0BB9A;
+    border-radius: 7px;
+    border: none;
+    color: #FFFFFF;
+    font-family: 'TT Firs Neue Trl', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.title-main {
+    font-family: Playfair display;
+    font-size: 49px;
+    line-height: normal;
+    font-weight: 400;
+    color: #1A1A1A;
+    text-decoration: none;
+}
+
+.title-group {
+    display: flex;
+    align-items: center;
+    margin-top: 110px;
+    margin-bottom: 88px;
+    gap: 27px;
+}
+
+.divider__second {
+    height: 44px;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(208, 187, 154, 0.7), rgba(255, 255, 255, 0));
+    border-radius: 7px;
+}
+
+.rec__visible {
+    display: flex;
+    flex-direction: row;
+}
+
+.rec__flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.rec__item {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.rec__text {
+    font-family: 'TT Firs Neue Trl', sans-serif;
+    font-size: 19px;
+    line-height: normal;
+    color: #332E2E;
+}
+
+.rec__btn {
+    border: 1px solid #272727;
+    font-family: 'TT Firs Neue Trl', sans-serif;
+    font-size: 14px;
+    line-height: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 12px 18px;
+    border-radius: 531px;
+    background: none;
+    max-width: 125px;
+}
+.rec__name {
+    font-family: 'TT Firs Neue Trl', sans-serif;
+    font-size: 32px;
+    line-height: normal;
+    font-weight: 400;
+    padding-top: 12px;
+    color: #332E2E;
+}
+
+.popular__item {
+    text-decoration: none;
+}
+
+a {
+    color: inherit;
+    /* Используйте цвет текста родительского элемента */
+    text-decoration: none;
+    /* Убираем подчеркивание */
+    cursor: crosshair;
+}
+
+/* Если вы хотите изменить цвет ссылки при наведении */
+a:hover {
+    color: inherit;
+    /* Используйте цвет текста родительского элемента */
+}
+
+.bttn_save{
+    display: flex;
+    flex-direction: row-reverse;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    border: unset;
+
+    justify-content: right;
+    width: 100%;
+}
+
+@media (max-width: 910px) {
+    .banner{
+        width: 80%;
+        padding: 11px 10%;
+    }
+    .banner__img{
+        padding: 30px 10% !important;
+        width: 80%;
+    }
+    .line{
+        text-align: right;
+        width: 100% !important;
+        display: inline-block !important;
+        margin: unset !important;
+    }
+    .zir{
+        padding: 0px !important;
+    }
+    .rec__flex{
+        justify-content: center;
+        width: 100%;
+    }
+    .title__name{
+        gap: 4px;
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 820px) {
+    .divider__second{
+        display:none;
+        font-size: 10vw;
+    }
+    .main-section{
+        flex-direction: column !important;
+
+        /*padding-right: 42px;*/
+        background : #FFFFFF !important;
+    }
+    .main__navigation{
+        row-gap: 0px !important;
+    }
+    .background{
+        width: 100%;
+    }
+    .banner{
+        width: 100%;
+        padding: 11px 0px;
+    }
+
+    .popular__item {
+        width: calc(100% - 80px);
+    }
+    .popular__img{
+        padding: 0px !important;
+    }
+    .backgradient{
+        width: unset !important;
+        height: unset !important;
+    }
+    .banner__img{
+        width:100%;
+    }
+    .banner__img img{
+        width: 100%;
+    }
+
+    .cards__arrow {
+        display:none;
+    }
+}
+
+.divider__second{
+    width: 60%;
+}
+
+@media (max-width: 720px) {
+    .banner {
+        width: 100%;
+        margin-left: 0%;
+    }
+    .title-group{
+        margin-top: 0px;
+    }
+}

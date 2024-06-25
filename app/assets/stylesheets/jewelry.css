@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Nunito+Sans:opsz,wght@6..12,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Nunito+Sans&display=swap');
+
+.banner__content {
+    background: url(../img/jewelry/banner.jpg) center center no-repeat;
+}
+
+.title__name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icon {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.jewelry_title {
+    font-family: 'TT Firs Neue Trl', sans-serif;
+    font-size: 38px;
+    color: #000000;
+    display: contents;
+}
+
+.grey__text {
+    font-family: 'TT Firs Neue Trl', sans-serif;
+    font-size: 22px;
+    font-weight: 200px;
+    color: #7D7B7B;
+}
+
+.line {
+    width: 110px;
+    margin: 24px 0px;
+    border-top: 1px solid #2A2A2A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.jewelry__text {
+    font-family: 'TT Firs Neue Trl', sans-serif;
+    font-size: 19px;
+    color: #7D7B7B;
+}
+
+.jewelry_flex {
+    display: flex;
+    flex-direction: row;
+    gap: 13px;
+    padding-top: 63px;
+}
+
+.grace2 {
+    height: 625px;
+    width: 549;
+
+}
+
+.ring {
+    height: 570px;
+    width: 549px;
+}
+
+.cover_name {
+    font-family: 'TT Firs Neue Trl', sans-serif;
+    font-size: 19px;
+    color: #7D7B7B;
+}
+
+.flex {
+    padding-top: 135px;
+}
+
+.popular__img {
+    border-radius: 381px;
+}
+
+.popular__item {
+    padding: 20px 40px;
+}
+
+.bttn {
+    display: flex;
+    width: 42px;
+    height: 42px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    background: white;
+}
+
+.next_btn {
+    border: none;
+    background: none;
+    padding: 20px;
+}
+
+.next_btn {
+    border: none;
+    background: none;
+    padding: 20px;
+}
+
+.hidden {
+    display: none;
+}

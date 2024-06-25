@@ -1,0 +1,110 @@
+.banner {
+    background: url(/assets/stones/banner.jpg) no-repeat;
+    padding: unset;
+}
+.banner__content {
+   
+}
+.popular__img {
+    border-radius: 381px;
+}
+.popular__title {
+    font-size: 21px;
+    font-family: 'TT Firs Neue Trl', sans-serif;
+    line-height: normal;
+    font-weight: 400;
+    color: #332E2E;
+}
+.backgradient {
+    width: 100%;
+    border-radius: 381px;
+    background: #F9F9F9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popular__item {
+    transition: box-shadow 0.3s ease;
+    padding: 20px 40px;
+
+    max-width: 24%;
+    /* Добавляет плавный переход эффекта тени */
+}
+
+.popular__item:hover {
+    box-shadow: 0px 4px 80px 0px #004BEF4D;
+}
+
+.banner__heading {
+    font-size: 63px;
+    font-family: 'TT Firs Neue Trl', sans-serif;
+    line-height: normal;
+    font-weight: 400;
+    color: #fff;
+}
+
+.text__opacity {
+    font-size: 22px;
+    font-family: 'TT Firs Neue Trl', sans-serif;
+    line-height: normal;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.banner__next {
+    background: transparent;
+    border: none;
+}
+
+.diamond {
+    position: relative;
+    width: 28px;
+    height: 28px;
+    border: 3px solid #D9D9D9;
+    /* Черная граница для всех ромбиков */
+    transform: rotate(45deg);
+    /* Поворот на 45 градусов для создания ромба */
+    background-color: transparent;
+}
+
+
+.diamond.active {
+    background-color: #fff;
+    /* Белый цвет для закрашенных ромбиков */
+    /* border: 3px solid #D9D9D9; Черная граница для всех ромбиков */
+}
+
+.hidden {
+    display: none;
+}
+.rhombus {
+    display: flex;
+    flex-direction: row;
+    gap: 21px;
+}
+
+.banner{
+
+    width: 80%;
+    margin-left: 10%;
+}
+
+@media (max-width: 960px) {
+    .popular__item {
+        max-width: 30%;
+    }
+    .banner__content{
+        padding: unset !important;
+    }
+}
+
+@media (max-width: 540px) {
+    .popular__item {
+        max-width: 100%;
+    }
+    .banner__heading{
+        font-size: 50px;
+        margin-left: 20px;
+    }
+}

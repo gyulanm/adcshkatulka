@@ -1,0 +1,89 @@
+
+
+ <div class="main__navigation">
+  <a href="/jewelrystory" class="bttn">
+                 <img src="/assets/jewelry/btn.svg" alt="">
+             </a>
+            <p class="author grey__text">Автор
+                статьи:<br> <%= post.user.email %></p>
+        </div>
+
+
+		<div class="background">
+            <div class="banner">
+                <div class="banner__img">
+                    <%= image_tag post.post_image.url %>
+                    <!--img src="/assets/zircon/bannerzircon.jpg"-->
+                </div>
+                <div class="jewelry">
+                    <div class="title__name">
+                        <p class="tab grey__text"><%= post.title%></p>
+                        <h1 class="jewelry_title"><%= post.title.split('/').last %></h1>
+                        <div class="icon">
+                            <img class="icon__img" src="/assets/jewelry/watch.svg" alt="">
+                            <p class="icon__text grey__text">1237</p>
+                            <img class="icon__img" src="/assets/jewelry/like.svg" alt="">
+                            <p class="icon__text grey__text">543</p>
+                        </div>
+                    </div>
+                    <div class="line">
+                        <p class="data__text grey__text"><%= post.created_at.strftime("%d.%m.%Y") %></p>
+                    </div>
+                    <p class="jewelry__text">
+                        <%= post.description.html_safe %>
+                    </p>
+                    <div class="zircon__row">
+                        <div class="img__js">
+                            <img class="zircon__first" src="/assets/zircon/zirkon.jpg" alt="">
+                            <div class="zir" href="#zircon__second">
+                                <button class="icons__img">
+                                    <img class="" src="/assets/zircon/icon.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="img__js hidden">
+                            <img class="zircon__second " src="/assets/zircon/2.jpg" alt="">
+                            <div class="zir" href="#zircon__second">
+                                <button class="icons__img ">
+                                    <img class="" src="/assets/zircon/icon.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popular">
+                    <div class="wrapper">
+                        <div class="title-group">
+                            <h1 class="jewelry_title">Читать еще:</h1>
+                            <div class="divider__second">
+                                <div class="highlight__second"></div>
+                            </div>
+                        </div>
+                        <div class="popular rec__visible">
+                            <div class="popular__flex rec__flex">
+                                <a class="popular__item rec__item">
+                                    <div class="backgradient">
+                                        <img class="popular__img rec__img" src="/assets/stones/topaz.png" alt="">
+                                    </div>
+                                    <p class="popular__text rec__text text">Топаз</p>
+                                    <button class="popular__btn rec__btn">#Камни</button>
+                                </a>
+                                <a class="popular__item rec__item">
+                                    <div class="backgradient">
+                                        <img class="popular__img rec__img" src="/assets/stones/opal.png" alt="">
+                                    </div>
+                                    <p class="popular__text rec__text text">Опал</p>
+                                    <button class="popular__btn rec__btn">#Камни</button>
+                                </a>
+                                <a class="popular__item rec__item">
+                                    <div class="backgradient">
+                                        <img class="popular__img rec__img" src="/assets/stones/alexandrit.png" alt="">
+                                    </div>
+                                    <p class="popular__text rec__text text">Александрит</p>
+                                    <button class="popular__btn rec__btn">#Камни</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+

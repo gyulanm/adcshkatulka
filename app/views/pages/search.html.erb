@@ -1,0 +1,21 @@
+    <% content_for :stylesheets do %>
+      <%= stylesheet_link_tag "search", "jewelrystory" %>
+    <% end %>
+
+    <% content_for :javascripts do %>
+      <%= javascript_include_tag "search" %>
+    <% end %>
+    <section class="search">
+        <div class="identify">
+            <input type="text" id="search_field" placeholder="Поиск" required="" class="form__inputt services__search form__input--large">
+            <img class="search-bttn" src="/assets/search/SearchForInput.svg" alt="">
+        </div>
+    </section>
+    <nav class="menu__filter filter">
+        <button class="filter__link article-hashtag " data-filter-type="all" href="<%= stones_path %>">Украшения</button>
+        <button class="filter__link article-hashtag filter__link-bl filter__link--selecteed"
+            data-filter-type="recommendations" href="<%= jewelrystory_path %>">Камни</button>
+    </nav>
+    <div class="catalog__wrapper content__wrapper">
+    </div>
+    </section>

@@ -1,0 +1,207 @@
+.tiffany {
+    display: flex;
+    flex-direction: column;
+    row-gap: 280px;
+    width: 100%;
+    padding-top: 700px;
+}
+
+.tiffany_history {
+    display: flex;
+    flex-direction: row;
+    column-gap: 134px;
+    width: 100%;
+
+}
+
+.banner {
+    background: url(/assets/tiffany/cartierbanner.png) no-repeat;
+
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 80%;
+    margin-left:10%;
+}
+
+.banner__cartier {
+    color: #FFFFFF;
+    align-content: center;
+    font-family: 'TT Firs Neue Trl', sans-serif;
+    /*padding: 68px 343px 0px 475px;*/
+}
+
+.banner__heading {
+    font-size: 85px;
+    font-weight: 200;
+}
+
+.text__cartier {
+    font-size: 25px;
+
+}
+
+.num {
+    display: flex;
+    flex-direction: column;
+    row-gap: 23px;
+    padding-top: 230px;
+
+}
+
+.num__link {
+    font-family: 'TT Firs Neue Trl', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 23px;
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.info_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap:wrap;
+}
+
+
+.info_topic {
+    max-width: 288px;
+    width: 100%;
+    text-align: center;
+}
+
+/* .info_title {
+    color: #000000;
+    font-size: 183px;
+    font-family: Bickham Script One;
+} */
+.info_title {
+    color: #000000;
+    font-size: 80px;
+    font-family: 'TT Firs Neue Trl', sans-serif;
+    font-weight: normal;
+    margin: 0;
+    line-height: 183px;
+}
+
+.info_subtitle {
+    color: #000000;
+    font-size: 32px;
+    font-family: 'TT Firs Neue Trl', sans-serif;
+    font-weight: 400;
+    line-height: normal;
+    margin-block: 8px;
+}
+
+.info_text {
+    color: #000000;
+    font-size: 18px;
+    font-family: 'TT Firs Neue Trl', sans-serif;
+    font-weight: 200;
+}
+
+.shop_img {
+    max-width: 489px;
+    width:100%;
+}
+
+.catalogue__img {
+    max-width: 531px;
+    width:100%;
+}
+
+.building_img {
+    max-width: 487px;
+    width:100%;
+}
+
+.moodboard_img {
+    max-width: 531px;
+    width:100%;
+}
+
+.portret_img {
+    max-width: 485px;
+    width:100%;
+}
+
+.almaz_img {
+    max-width: 528px;
+    width:100%;
+}
+
+.ring_img {
+    max-width: 485px;
+    width:100%;
+}
+
+.magazin_img {
+    max-width: 399px;
+    width:100%;
+}
+
+.box_img {
+    max-width: 289px;
+    width:100%;
+}
+
+.years_cartier {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 72px;
+}
+
+.years_img {
+    padding-left: 20px;
+}
+.years_img img{
+    width: 100%;
+}
+
+.cartier_img {
+    padding-bottom: 72px;
+}
+
+.number__nav {
+    display: flex;
+    flex-direction: row;
+
+    gap: 4.2%;
+    margin-left: 31%;
+}
+.number__nav .num__link {
+}
+
+@media (min-width: 1253px) {
+    .info_topic {
+        max-width: 350px !important;
+    }
+}
+@media (max-width: 1253px) {
+    .tiffany{
+        row-gap: 50px;
+    }
+    .info_wrapper{
+        justify-content: center;
+    }
+
+    .banner {
+        background-position: 50% -26px;
+    }
+}
+
+@media (max-width: 600px) {
+    .years_img .number__nav{
+        display:none;
+    }
+
+}

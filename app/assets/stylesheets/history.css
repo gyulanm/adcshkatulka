@@ -1,0 +1,105 @@
+
+.history {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Это распределит кнопки и картинку равномерно по горизонтали */
+}
+
+.bttn {
+    display: flex;
+    justify-content: center;
+    /* Это центрирует содержимое кнопок */
+    align-items: center;
+    /* Это центрирует содержимое кнопок по вертикали */
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    background: transparent;
+    border: 2px solid #000000;
+}
+
+.back {
+    background: transparent;
+    border: 2px solid #000000;
+    margin-right: 21px;
+    /* Добавляем правый отступ к кнопке "bttn back" */
+}
+
+.arrow {
+    background: #3F4144;
+    border: none;
+    margin-left: 21px;
+    /* Добавляем левый отступ к кнопке "bttn arrow" */
+}
+
+.history__img {
+    border-radius: 20px;
+    width: 100%;
+    /* Установите ширину, чтобы картинка занимала всю доступную ширину */
+    height: auto;
+    /* Установите высоту на auto, чтобы сохранить пропорции картинки */
+}
+
+.history__calculate {
+    font-family: Copperplate;
+    font-size: 44px;
+    line-height: normal;
+    font-weight: 400;
+    padding-top: 12px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding-right: 80px;
+    padding-bottom: 82px;
+}
+
+.history__card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.bvglar__card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.title-group{
+    margin-left: 80px;
+}
+
+.bg__card{
+    width: calc(100% - 172px);
+}
+.bg__card img{
+    width: 100%;
+}
+
+@media (max-width: 630px) {
+    .history__card{
+        flex-wrap: wrap;
+    }
+    .bg__card {
+        width: 100%;
+        order: 3;
+    }
+    .bttnnx.bttn.arrow,.bttnpr.bttn.arrow{
+        order:2;
+        margin-bottom: 20px;
+    }
+    .bttn.back{
+        margin-bottom: 20px;
+    }
+    .title-group{
+        margin-top:0px;
+    }
+
+}

@@ -1,0 +1,27 @@
+
+<% content_for :stylesheets do %>
+  <%= stylesheet_link_tag "enter", "tech" %>
+<% end %>
+<section class="main-section">
+  <div class="background">
+  <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    <div class="banner">
+      <div class="enter">
+        <h1 class="title__enter">Вход в аккаунт</h1>
+        <div class="wrapper__denter">
+          <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"mail" %>
+          <%= f.password_field :password, class:"password" %>
+             <%= f.button "Войти", class: "enter_btn btn__text", name: "commit" %>
+        </div>
+        <div class="reg">
+          <p class="not">Нет аккаунта?</p>
+          <a href="/users/sign_up">
+            <p class="regist">Регистрация</p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <% end %>
+  </div>
+</section>

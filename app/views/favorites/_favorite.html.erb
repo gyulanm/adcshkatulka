@@ -1,0 +1,11 @@
+<div id="favorite_<%= @post.id %>">
+  <% if current_user.favorite_posts.include?(@post) %>
+    <%= button_to post_favorite_path(@post), method: :delete, remote: true, format: :turbo_stream, style: "filter:brightness(0.5);", class: "bttn_save" do %>
+      <%= image_tag "common/save.svg", alt: "" %>
+    <% end %>
+  <% else %>
+    <%= button_to post_favorite_path(@post), method: :post, remote: true, class: "bttn_save" do %>
+      <%= image_tag "common/save.svg", alt: "" %>
+    <% end %>
+  <% end %>
+</div>
